@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>pobieranie elementu</title>
+</head>
+<body>
+    <div id="parent-id">
+        <p>hello world 1</p>
+        <p class="test">hello world 2</p>
+        <p>hello world 3</p>
+        <p>hello world 4</p>
+      </div>
+      <script>
+        const parentDOM = document.getElementById("parent-id");
+  
+        const test = parentDOM.getElementsByClassName("test");
+  
+        const testTarget = parentDOM.getElementsByClassName("test")[0];
+      </script>
+</body>
+</html>
